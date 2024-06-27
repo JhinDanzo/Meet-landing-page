@@ -51,6 +51,14 @@ body{
     text-align: center;
     margin-bottom: 110px;
 
+    .background{
+        display: block;
+    }
+
+    .background-tablet{
+        display: none;
+    }
+
     .info-container{
         @include flexbox(column);
         margin-left: 88px;
@@ -163,7 +171,6 @@ body{
         width: 540px;
         text-align: center;
         color: $silver;
-        width: 540px;
     }
 }
 
@@ -206,6 +213,11 @@ footer{
         top: 0;
         width: 100vw;
         height: 308px;
+        display: block
+    }
+
+    .footer-image-tablet{
+        display: none;
     }
 
     .footer-container{
@@ -243,6 +255,111 @@ footer{
             }
         }
         
+    }
+}
+
+@media only screen and (max-width: 768px){
+    
+    .logo{
+        margin-top: 48px;
+        margin-bottom: 64px
+    }
+
+    .group-chat-container{
+        @include flexbox(column);
+        margin-bottom: 80px;
+
+        .background{
+            display: none;
+        }
+
+        .background-tablet{
+            display: block;
+            margin-bottom: 72px;
+        }
+
+        .info-container{
+
+            .title{
+                font-size: 48px;
+                line-height: 48px;
+                margin-bottom: 24px;
+                width: 339px;
+            }
+
+            .main-text{
+                font-size: 16px;
+                width: 457px;
+            }
+        }
+    }
+
+    .section-one{
+        margin-bottom: 67px;
+    }
+
+    .user-photos{
+        gap: 11px;
+        margin-bottom: 48px;
+
+        .photo{
+            height: 156px;
+            width: 164px;
+        }
+    }
+
+    .info{
+        width: 573px;
+        margin-bottom: 80px;
+
+        .main-text{
+            font-size: 16px;
+            width: 573px;
+        }
+    }
+
+    footer{
+        height: 428px;
+
+        .footer-image{
+            display: none;
+        }
+
+        .footer-image-tablet{
+            display: block;
+            opacity: 0.1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 428px;
+        }
+
+        .footer-container{
+            @include flexbox(column);
+            text-align: center;
+            padding-top: 92px;
+            padding-left: 155px;
+            padding-right: 156px;
+
+            .local-title{
+                width: 457px;
+                margin-right: 0;
+                margin-bottom: 32px;
+                z-index: 1;
+            }
+
+            .main-text{
+                margin-right: 0;
+                margin-bottom: 40px;
+                width: 573px;
+            }
+
+            .download-button{
+                margin-bottom: 66px;
+            }
+        }
+
     }
 }
 

@@ -38,6 +38,12 @@ body {
   text-align: center;
   margin-bottom: 110px;
 }
+.group-chat-container .background {
+  display: block;
+}
+.group-chat-container .background-tablet {
+  display: none;
+}
 .group-chat-container .info-container {
   display: flex;
   flex-direction: column;
@@ -153,7 +159,6 @@ body {
   width: 540px;
   text-align: center;
   color: #87879D;
-  width: 540px;
 }
 
 .section-two {
@@ -197,6 +202,10 @@ footer .footer-image {
   top: 0;
   width: 100vw;
   height: 308px;
+  display: block;
+}
+footer .footer-image-tablet {
+  display: none;
 }
 footer .footer-container {
   display: flex;
@@ -230,4 +239,93 @@ footer .footer-container .download-button:hover {
 }
 footer .footer-container .download-button .version-two {
   color: #D9B8FF;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-top: 48px;
+    margin-bottom: 64px;
+  }
+  .group-chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .group-chat-container .background {
+    display: none;
+  }
+  .group-chat-container .background-tablet {
+    display: block;
+    margin-bottom: 72px;
+  }
+  .group-chat-container .info-container .title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    width: 339px;
+  }
+  .group-chat-container .info-container .main-text {
+    font-size: 16px;
+    width: 457px;
+  }
+  .section-one {
+    margin-bottom: 67px;
+  }
+  .user-photos {
+    gap: 11px;
+    margin-bottom: 48px;
+  }
+  .user-photos .photo {
+    height: 156px;
+    width: 164px;
+  }
+  .info {
+    width: 573px;
+    margin-bottom: 80px;
+  }
+  .info .main-text {
+    font-size: 16px;
+    width: 573px;
+  }
+  footer {
+    height: 428px;
+  }
+  footer .footer-image {
+    display: none;
+  }
+  footer .footer-image-tablet {
+    display: block;
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 428px;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 92px;
+    padding-left: 155px;
+    padding-right: 156px;
+  }
+  footer .footer-container .local-title {
+    width: 457px;
+    margin-right: 0;
+    margin-bottom: 32px;
+    z-index: 1;
+  }
+  footer .footer-container .main-text {
+    margin-right: 0;
+    margin-bottom: 40px;
+    width: 573px;
+  }
+  footer .footer-container .download-button {
+    margin-bottom: 66px;
+  }
 }/*# sourceMappingURL=style.css.map */
