@@ -1,0 +1,251 @@
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+$main-font: Red Hat Display, serif;
+$teal: #4D96A9;
+$teal-active: #71C0D4 ;
+$purple: #855FB1;
+$purple-active: #B18BDD;
+$darknight: #28283D;
+$silver: #87879D;
+$skyblue: #8FE3F9;
+$violet: #D9B8FF;
+$white: #FAFAFA;
+
+@mixin flexbox($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    @include flexbox(column);
+    font-family: $main-font;
+    background-color: $white;
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.logo{
+    margin-top: 80px;
+    margin-bottom: 66px;
+}
+
+.button{
+    height: 58px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 29px;
+    border: none;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+}
+
+.group-chat-container{
+    @include flexbox(row);
+    text-align: center;
+    margin-bottom: 110px;
+
+    .info-container{
+        @include flexbox(column);
+        margin-left: 88px;
+        margin-right: 88px;
+
+        .title{
+            font-size: 64px;
+            line-height: 64px;
+            width: 445px;
+            margin-bottom: 34px;
+        }
+
+        .main-text{
+            font-size: 18px;
+            line-height: 26px;
+            width: 540px;
+            margin-bottom: 32px;
+            color: $silver
+        }
+
+        .buttons{
+            @include flexbox(row);
+            gap: 16px;
+        }   
+
+        .download-button{
+            background-color: $teal;
+
+            &:hover{
+                background-color: $teal-active;
+                cursor: pointer;
+            }
+
+            .version-one{
+                color: $skyblue;
+            }
+        }
+
+        .info-button{
+            background-color: $purple;
+
+            &:hover{
+                background-color: $purple-active;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.section-one{
+    $silver: rgba(135, 135, 157, 0.25);
+    @include flexbox(column);
+    font-size: 16px;
+    margin-bottom: 64px;
+
+    .vertical-line{
+        border-left: 1px solid $silver;
+        width: 1px;
+        height: 84px;
+    }
+
+    .circle{
+        @include flexbox(row);
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        border: 1px solid $silver;
+        $silver: #87879D;
+        color: $silver;
+    }
+}
+
+.user-photos{
+    @include flexbox(row);
+    gap: 30px;
+    margin-bottom: 80px;
+    .photo{
+        border-radius: 8px;
+        height: 242px;
+        width: 255px;
+    }
+}
+
+.info{
+    @include flexbox(column);
+    width: 540px;
+    height: 240px;
+    margin-bottom: 72px;
+    .slogan{
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 4px;
+        color: $teal;
+        margin-bottom: 16px;
+    }
+
+    .local-title{
+        text-align: center;
+        font-size: 40px;
+        line-height: 44px;
+        width: 445px;
+        color: $darknight;
+        margin-bottom: 32px;
+    }
+
+    .main-text{
+        font-size: 18px;
+        line-height: 26px;
+        width: 540px;
+        text-align: center;
+        color: $silver;
+        width: 540px;
+    }
+}
+
+.section-two{
+    $silver: rgba(135, 135, 157, 0.25);
+    @include flexbox(column);
+    font-size: 16px;
+    margin-bottom: -28px;
+    z-index: 1;
+
+    .vertical-line{
+        border-left: 1px solid $silver;
+        width: 1px;
+        height: 84px;
+    }
+
+    .circle{
+        background-color: $white;
+        @include flexbox(row);
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        border: 1px solid $silver;
+        $silver: #87879D;
+        color: $silver;
+        z-index: 1;
+    }
+}
+
+footer{
+    width: 100vw;
+    position: relative;
+    background-color: $teal;
+    height: 308px;
+    
+    .footer-image{
+        opacity: 0.1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 308px;
+    }
+
+    .footer-container{
+        @include flexbox(row);
+        padding: 116px 165px 104px 165px;
+        color: $white;
+
+        .local-title{
+            font-size: 40px;
+            line-height: 44px;
+            width: 350px;
+            margin-right: 125px;
+        }
+
+        .main-text{
+            width: 350px;
+            font-size: 18px;
+            line-height: 26px;
+            margin-right: 92px;
+        }
+
+        .download-button{
+            background-color: $purple;
+            z-index: 1;
+            color: $white;
+            font-size: 16px;
+
+            &:hover{
+                background-color: $purple-active;
+                cursor: pointer;
+            }
+
+            .version-two{
+                color: $violet;
+            }
+        }
+        
+    }
+}
+
+
+
+
