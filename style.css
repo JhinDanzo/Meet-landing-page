@@ -404,6 +404,7 @@ footer .footer-container .download-button .version-two {
   }
   footer {
     height: 428px;
+    margin-bottom: 0;
   }
   footer .footer-image {
     display: none;
