@@ -312,6 +312,7 @@ footer .footer-container .download-button .version-two {
   footer {
     width: 375px;
     height: 428px;
+    margin-bottom: 0;
   }
   footer .footer-image {
     display: none;
