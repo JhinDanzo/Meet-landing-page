@@ -207,6 +207,9 @@ footer .footer-image {
 footer .footer-image-tablet {
   display: none;
 }
+footer .footer-image-phone {
+  display: none;
+}
 footer .footer-container {
   display: flex;
   flex-direction: row;
@@ -242,6 +245,115 @@ footer .footer-container .download-button .version-two {
 }
 
 @media only screen and (max-width: 768px) {
+  .logo {
+    margin-bottom: 54px;
+  }
+  .group-chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  .group-chat-container .background {
+    display: none;
+  }
+  .group-chat-container .background-tablet {
+    display: block;
+    height: 153px;
+    width: 414px;
+    margin-bottom: 48px;
+  }
+  .group-chat-container .info-container {
+    margin-bottom: 32px;
+  }
+  .group-chat-container .info-container .title {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 24px;
+    width: 327px;
+  }
+  .group-chat-container .info-container .main-text {
+    font-size: 16px;
+    width: 327px;
+  }
+  .group-chat-container .info-container .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-one {
+    margin-bottom: 64px;
+  }
+  .user-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 64px;
+  }
+  .user-photos .photo {
+    height: 143px;
+    width: 151px;
+  }
+  .info {
+    width: 327px;
+    margin-bottom: 64px;
+  }
+  .info .local-title {
+    width: 327px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .info .main-text {
+    width: 327px;
+    font-size: 16px;
+  }
+  footer {
+    width: 375px;
+    height: 428px;
+  }
+  footer .footer-image {
+    display: none;
+  }
+  footer .footer-image-tablet {
+    display: none;
+  }
+  footer .footer-image-phone {
+    display: block;
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 428px;
+    width: 375px;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 92px;
+    text-align: center;
+  }
+  footer .footer-container .local-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  footer .footer-container .main-text {
+    width: 327px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 928px) {
   .logo {
     margin-top: 48px;
     margin-bottom: 64px;
@@ -293,6 +405,9 @@ footer .footer-container .download-button .version-two {
     height: 428px;
   }
   footer .footer-image {
+    display: none;
+  }
+  footer .footer-image-phone {
     display: none;
   }
   footer .footer-image-tablet {
