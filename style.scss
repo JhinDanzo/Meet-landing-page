@@ -72,7 +72,7 @@ body{
         }
 
         .main-text{
-            font-size: 18px;
+            font-size: 0.5rem;
             line-height: 26px;
             width: 540px;
             margin-bottom: 32px;
@@ -264,7 +264,6 @@ footer{
 
 @media only screen and (max-width: 768px){
 
-
     .logo{
         margin-bottom: 54px
     }
@@ -384,7 +383,7 @@ footer{
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 928px){
+@media only screen and (min-width: 768px) and (max-width: 1110px){
     
     .logo{
         margin-top: 48px;
