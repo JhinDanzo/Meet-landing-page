@@ -37,6 +37,7 @@ body{
 }
 
 .button{
+    @include flexbox(row);
     height: 58px;
     padding: 16px 40px 16px 40px;
     border-radius: 29px;
@@ -238,7 +239,7 @@ footer{
 
         .main-text{
             width: 350px;
-            font-size: 18px;
+            font-size: 1rem;
             line-height: 26px;
             margin-right: 92px;
         }
